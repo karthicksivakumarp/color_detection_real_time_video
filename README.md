@@ -10,18 +10,20 @@ Components:
 Function: get_color_name(hue)
 
 Purpose: Determines the color name based on the hue value.
+
 Input: Hue value.
+
 Output: Color name (Red, Yellow, Green, Blue, or Unknown).
 
 Video Capture Initialization:
 Opens the default camera using cv2.VideoCapture(0).
-Main Loop (Real-Time Video Processing):
 
+Main Loop (Real-Time Video Processing):
 Continuously reads frames from the video capture.
 Converts each frame to the HSV (Hue, Saturation, Value) color space using cv2.cvtColor.
 Defines color ranges for Red, Yellow, Green, and Blue.
-Color Detection Algorithm:
 
+Color Detection Algorithm:
 For each color range, a mask is created using cv2.inRange to isolate pixels within the specified color range.
 The average hue value is calculated in the region covered by the mask using np.mean.
 The detected color is determined by comparing the average hue to the predefined color ranges.
