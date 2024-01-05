@@ -3,8 +3,6 @@ Color Detection (Red, Yellow, Green, Blue, or Unknown) in Real-Time Video using 
 
 ![image](https://github.com/karthicksivakumarp/color_detection_real_time_video/assets/154797330/b3116cd7-3f17-4423-873a-2be3c286793c)
 
-Done for LED color detection during automated testing of hardware boards.
-
 This Python script utilizes the OpenCV library to perform real-time color detection in a video stream from the default camera. 
 The goal is to identify and display the dominant color in the captured frames, considering predefined color ranges.
 
